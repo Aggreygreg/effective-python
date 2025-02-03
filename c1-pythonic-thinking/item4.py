@@ -31,7 +31,7 @@ pantry = [
     ('cherries', 15),
 ]
 
-for i, (item, count) in enumerate(pantry):
+for i, (item, count) in enumerate(pantry, start=1):
     print('#%d: %-10s = %.2f' % (i, item, count))
 
 # Adding modifications

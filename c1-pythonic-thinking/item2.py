@@ -37,3 +37,4 @@ def check_items(some_list):
 # import os
 
 # Avoid relative imports unless necessary
+# use the explicit syntax from . import foo.
