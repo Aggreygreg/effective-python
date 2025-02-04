@@ -1,9 +1,9 @@
 # Item 5: Write Helper Functions Instead of Complex Expressions
 
-This script demonstrates the importance of using helper functions 
-instead of complex one-liner expressions to improve readability 
-and maintainability in Python code.
-\"\"\"
+# This script demonstrates the importance of using helper functions 
+# instead of complex one-liner expressions to improve readability 
+# and maintainability in Python code.
+
 
 from urllib.parse import parse_qs
 
@@ -38,7 +38,8 @@ else:
 
 # Encapsulating the logic in a helper function
 def get_first_int(values, key, default=0):
-    \"\"\"Get the first integer value for a given key in the dictionary.
+    """
+    Get the first integer value for a given key in the dictionary.
 
     Args:
         values (dict): Dictionary with key-value pairs.
@@ -47,7 +48,7 @@ def get_first_int(values, key, default=0):
 
     Returns:
         int: The integer value for the given key or the default value.
-    \"\"\"
+    """
     found = values.get(key, [''])
     if found[0]:
         return int(found[0])
@@ -64,10 +65,4 @@ print(f'Opacity: {opacity}')
 # Output:
 # Red: 5
 # Green: 0
-# Opacity: 0
-
-
-# Save the content to a file named "item5.py"
-with open("item5.py", "w") as file:
-    file.write(item5_code)
-    
+# Opacity: 0    
