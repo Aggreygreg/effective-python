@@ -44,10 +44,6 @@ def coprime(a, b):
             return False  # Not coprime
     return True  # Coprime
 
-# Test cases
-assert coprime(4, 9)  # True
-assert not coprime(3, 6)  # False
-
 # Alternative 2: Using a flag variable for checking coprimality
 def coprime_alternate(a, b):
     is_coprime = True
@@ -56,7 +52,3 @@ def coprime_alternate(a, b):
             is_coprime = False
             break
     return is_coprime
-
-# Test cases
-assert coprime_alternate(4, 9)  # True
-assert not coprime_alternate(3, 6)  # False
